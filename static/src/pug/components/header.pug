@@ -1,0 +1,18 @@
+mixin header(data)
+    - data = data || {}
+    -
+      var languages = _lara ? _languages : [
+        {lang: 'nl', url: '#', isActive: false},
+        {lang: 'fr', url: '#', isActive: false},
+        {lang: 'en', url: '#', isActive: true}
+      ]
+    .header(class={'header_white-right': headerWhiteRight})
+        .header__container
+            a.logo(href="/")
+                +icon('logo')
+            .header__trigger
+            .header__lang
+                ul
+                    each data in languages
+                        li
+                            a(href=data.url class=data.isActive && 'is-active') #{data.lang}

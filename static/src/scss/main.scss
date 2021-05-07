@@ -1,0 +1,97 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/normalize";
+// @import "flatpickr/dist/flatpickr.min"; // no need ./node_modules
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: $main-line-height;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+    font-weight: $main-font-weight;
+    color: #000;
+    background-color: $color-white;
+    @extend %antialias;
+    width: 100%;
+    position: relative;
+    @include r(1023){
+        @include css-lock(16,20,320,768);
+        // font-size: 2rem;
+    }
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+svg {
+    fill: currentColor;
+    max-height: 100%;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+strong,
+.bold {
+    font-weight: 700;
+}
+
+.layout {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__header,
+    &__footer{
+        flex-shrink: 0;
+    }
+    &__header{
+        z-index: 100;
+    }
+    &__main{
+        flex-grow: 1;
+        overflow: hidden;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 1176px;
+    @include rmin(1500) {
+        max-width: 1440px;
+    }
+}
+
+
+// Components
+@import "components";
+@import "pages";
+
+// Utils
+@import "utils/utils";

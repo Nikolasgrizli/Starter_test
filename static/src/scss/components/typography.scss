@@ -1,0 +1,52 @@
+// Typography
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-style: normal;
+    margin-top: 0;
+    line-height: 1;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// h1, .h1 {
+//     font-size: var(--h1Size);
+//     @include font-extra;
+//     letter-spacing: 0.015em;
+// }
+
+// h2, .h2 {
+//     font-size: var(--h2Size);
+//     @include font-extra;
+//     letter-spacing: 0.015em;
+//     &_md{
+//         font-size: var(--h2Size_md);
+//     }
+// }
+
+// h3, .h3 {
+//     font-size: var(--h3Size);
+//     @include font-extra;
+//     line-height: 52/40*1em;
+// }
+
+// h4, .h4 {
+//     font-size: 32px;
+//     line-height: 38/32*1em;
+//     font-weight: 600;
+//     letter-spacing: 0.03em;
+// }
+
+// h5, .h5 {
+//     font-size: 24px;
+//     line-height: 29/24*1em;
+//     font-weight: 600;
+//     letter-spacing: 0.03em;
+// }
+
+// h6, .h6 {
+//     font-size: 18px;
+//     line-height: 22/18*1em;
+//     font-weight: 600;
+//     letter-spacing: 0.03em;
+// }

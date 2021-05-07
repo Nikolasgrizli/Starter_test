@@ -1,0 +1,22 @@
+%button{
+    @extend %reset-btn;
+    padding: .5em 1em .55em 1em;
+    display: inline-flex;
+    flex: 0 0 auto;
+    max-width: 100%;
+    // font-size: var(--smSize);
+    font-size: inherit;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-base;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+    min-height: em(38);
+    min-width: em(160);
+    letter-spacing: .02em;
+}
+
+

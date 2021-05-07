@@ -1,0 +1,24 @@
+mixin footer(data)
+    - data = data || {}
+    -
+        var copyText = t('copyright')
+        var footerLinks = _lara ? _footerLinks : [
+            {url: '#', text: 'Wedstrijdreglement', isActive: true, external: true},
+            {url: '#', text: 'Gebruiksvoorwaarden', isActive: false, external: true},
+            {url: '#', text: 'Privacybeleid', name: false, external: true},
+            {url: '#', text: 'Cookie beleid', name: false, external: true},
+        ]
+
+
+    .footer(class={'footer_white-right': headerWhiteRight})
+        .footer__container
+            .footer__copy!=copyText
+            .footer__nav
+                ul
+                    each footerLink in footerLinks
+                        li
+                            a(
+                                href=footerLink.url,
+                                class!= {'is-active' : footerLink.isActive},
+                                target= footerLink.external ? "_blank" : "_self",
+                            )!=footerLink.text

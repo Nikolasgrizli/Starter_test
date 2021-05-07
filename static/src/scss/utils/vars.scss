@@ -1,0 +1,43 @@
+// Font
+$main-font: 'Soleil', sans-serif;
+
+
+:root{
+        --test-color: #FFFFFF;
+}
+
+$main-font-size: 17px;
+$main-font-weight: 400;
+$main-line-height: 1.59;
+
+
+// Breakpoints
+// $breakpoints: (
+//         xs: 0,
+//         sm: 576px,
+//         md: 768px,
+//         lg: 1024px,
+//         xl: 1200px
+// );
+
+// Colors
+// $color-primary: #4AC0C3;
+// $color-secondary: #AD6AD9;
+$color-white: #FFFFFF;
+// $color-dark: #202020;
+// $color-text: #000033;
+// $color-gray: #D5D5D5;
+
+
+// Z-indexes
+// $z-indexes: (
+//         "modal",
+//         "latest-activities",
+//         "header",
+//         "wrapper",
+//         "footer"
+// );
+
+// Transitions
+$transition-base: 0.33s cubic-bezier(.23, 1, .32, 1);
+$transition-slow: .6s cubic-bezier(0.08, 1.00, 0.21, 1.00);

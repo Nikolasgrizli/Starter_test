@@ -1,0 +1,18 @@
+.competition-rules-page {
+    height: auto;
+    &__inner {
+        padding-top: 140px;
+        padding-bottom: var(--footerHeight);
+        .container {
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            max-width: 100%;
+            width: 1170px;
+        }
+    }
+
+    h1 {
+        font-size: initial !important;
+    }
+}

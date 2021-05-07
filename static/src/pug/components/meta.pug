@@ -1,0 +1,18 @@
+mixin meta()
+    -
+        var pathUrl = url || 'localhost'
+
+    //- title #{_lara ? _title || title : title}
+    //- meta(name="description" content=description)
+    title!=t('home.title')
+    meta(name="description" content!=t('social.description'))
+
+    meta(property='og:title' content=t('social.title'))
+    meta(property='og:description' content=t('social.description'))
+    meta(property='og:image', content!= pathUrl + '/public/img/socials/og_image-' + $lang +'.jpg')
+    meta(property='og:type' content='article')
+    meta(name='twitter:card' content='')
+    meta(name='twitter:site' content='')
+    meta(name='twitter:title' content=t('social.title'))
+    meta(name='twitter:description' content=t('social.description'))
+    meta(name='twitter:image', content!= pathUrl + '/public/img/socials/twittercard_image-' + $lang +'.jpg')
